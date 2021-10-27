@@ -6,7 +6,7 @@ import AppStorage from './AppStorage'
 class User{
     responseAfterLogin(res){
         const access_token = res.data.access_token
-        const userename = res.data.userename
+        const username = res.data.name
         if (Token.isValid(access_token)){
             AppStorage.store(access_token,username)
         }
@@ -17,7 +17,7 @@ class User{
             return Token.isValid(storeToken)? true : false
         }
         false
-    }
+    } 
     loggedIn(){
         return this.hasToken()
     }
@@ -38,4 +38,4 @@ class User{
 
 
 
-export default User = new User();
+export default User = new User()

@@ -1,4 +1,4 @@
-class AppSotrage{
+class AppStorage{
     storeToken(token){
         localStorage.setItem('token', token);
     }
@@ -7,24 +7,24 @@ class AppSotrage{
     }
     
     store(token, user){
-        this.storeToken('token', token)
-        this.storeUser('user', user)
+        this.storeToken(token)
+        this.storeUser(user)
     }
 
-    clear(token, user){
+    clear(){
         localStorage.removeItem('token')
         localStorage.removeItem('user')
     }
 
     getToken(){
-        localStorage.getItem('token');
+        localStorage.getItem(token);
     }
     getUser(){
-        localStorage.getItem('user');
+        localStorage.getItem(user);
     }
     
 }
 
 
 
-export default AppStorage = new AppStorage();
+export default AppStorage = new AppStorage()

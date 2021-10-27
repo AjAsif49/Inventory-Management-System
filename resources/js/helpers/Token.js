@@ -7,7 +7,7 @@ class Token{
         return false
    } 
     payload(token){
-        const payload = token.split('.') [1]
+        const payload = token.split('.')[1]
         return this.decode(payload)
     }
     decode(payload){
@@ -17,4 +17,4 @@ class Token{
 
 
 
-export default Token = new Token();
+export default Token = new Token()

@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 import {routes} from './routes';
 
 //Import User Class
-import User from './helpers/User';
+import User from './Helpers/User';
 window.User = User
 
 const router = new VueRouter({

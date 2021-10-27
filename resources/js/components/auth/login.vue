@@ -49,7 +49,7 @@
 </template>
 
 
-<script>
+<script type="text/javascript">
 
     export default{
       data(){
@@ -63,7 +63,8 @@
     methods:{
       login(){
         axios.post('/api/auth/login', this.form)
-        .then(res => console.log(res.data))
+        .then(res => User.responseAfterLogin(res))
+        // .then(res => console.log(res.data))
         .catch(error => console.log(error.response.data))
       }
     }
