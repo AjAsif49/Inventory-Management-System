@@ -25,6 +25,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "node-notifier": "^10.0.0",
+        "sweetalert2": "^11.1.9",
         "vue-router": "^3.5.2"
     }
 }
