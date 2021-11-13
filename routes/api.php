@@ -17,4 +17,4 @@ Route::group([
 });
 
 
-Route::apiResource('/employee', 'Api/EmployeeController');
+Route::apiResource('/employee', 'App\Http\Controllers\Api\EmployeeController');

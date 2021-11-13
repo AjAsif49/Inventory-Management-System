@@ -20,6 +20,6 @@ export const routes = [
     { path: '/home', component: home, name:'home' },
 
     { path: '/store-employee', component: storeemployee, name:'store-employee' },
-    { path: '/employee', component:employee, name:'employee' }
+    { path: '/employee', component: employee, name: 'employee' }
 
   ]
