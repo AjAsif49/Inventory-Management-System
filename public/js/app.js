@@ -2661,14 +2661,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     return {
       form: {
-        name: null,
-        email: null,
-        phone: null,
-        salary: null,
-        address: null,
-        photo: null,
-        nid: null,
-        joining_date: null
+        name: '',
+        email: '',
+        phone: '',
+        salary: '',
+        address: '',
+        photo: '',
+        newphoto: '',
+        nid: '',
+        joining_date: ''
       },
       errors: {}
     };
@@ -2693,17 +2694,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var reader = new FileReader();
 
       reader.onload = function (event) {
-        _this2.form.photo = event.target.result;
-        console.log(event.target.result);
+        _this2.form.newphoto = event.target.result;
       };
 
       reader.readAsDataURL(file);
     }
   },
-  employeeInsert: function employeeInsert() {
+  employeeUpdate: function employeeUpdate() {
     var _this3 = this;
 
-    axios.post('api/employee', this.form).then(function () {
+    var id = this.$route.params.id;
+    axios.patch('/api/employee/' + id, this.form).then(function () {
       _this3.$router.push({
         name: 'employee'
       });
@@ -47386,7 +47387,7 @@ var render = function() {
                       on: {
                         submit: function($event) {
                           $event.preventDefault()
-                          return _vm.employeeInsert.apply(null, arguments)
+                          return _vm.employeeUpdate.apply(null, arguments)
                         }
                       }
                     },
@@ -47758,7 +47759,7 @@ var staticRenderFns = [
       _c(
         "button",
         { staticClass: "btn btn-primary btn-block", attrs: { type: "submit" } },
-        [_vm._v("Submit")]
+        [_vm._v("Update")]
       )
     ])
   }
