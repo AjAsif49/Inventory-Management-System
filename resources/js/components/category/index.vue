@@ -20,8 +20,8 @@
                   <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
-                        <th>Category Name</th>
-                        <th>Action</th>
+                        <th class="col-lg-8">Category Name</th>
+                        <th class="col-lg-4">Action</th>
                       </tr>
                     </thead>
                     <tbody>

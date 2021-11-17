@@ -26,7 +26,7 @@
                       </div>
 
                        <div class="col-md-6">
-                          <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter Your Email" v-model="form.email">
+                          <input type="email" class="form-control" id="exampleInputFirstName" placeholder="Enter Your Email" v-model="form.email">
                       <small class="text-danger" v-if="errors.email" > {{ errors.email[0] }} </small>
                       </div>
                   </div>    
