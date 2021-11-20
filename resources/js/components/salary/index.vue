@@ -28,7 +28,7 @@
                       <tr v-for="salary in filterSearch" :key="salary.id">
                         <td> {{ salary.salary_month }} </td>
                         
-                         <td>
+                         <td class="col-md-4">
                            <router-link :to="{ name: 'view-salary', params:{id:salary.salary_month}}" class="btn btn-sm btn-primary">View Salary</router-link>
                           </td>
                       </tr>
