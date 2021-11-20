@@ -134,11 +134,13 @@
 
 
       <li class="nav-item">
-        <a class="nav-link" href="forms.html">
+        <router-link class="nav-link" to="/stock">
           <i class="fab fa-fw fa-wpforms"></i>
-          <span>Forms</span>
-        </a>
+          <span>Stock</span>
+        </router-link>
       </li>
+
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
           aria-controls="collapseTable">
@@ -390,7 +392,7 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>copyright &copy; <script> document.write(new Date().getFullYear()); </script> - developed by
-              <b><a href="https://www.facebook.com/AsifJalal49/" target="_blank">AJ</a></b>
+              <b><a href="" target="_blank">AJ</a></b>
             </span>
           </div>
         </div>
