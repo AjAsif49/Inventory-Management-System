@@ -36,3 +36,9 @@ Route::Post('/salary/update/{id}', 'App\Http\Controllers\Api\SalaryController@Up
 Route::Post('/stock/update/{id}', 'App\Http\Controllers\Api\ProductController@StockUpdate');
 
 Route::Get('/getting/product/{id}', 'App\Http\Controllers\Api\PosController@GetProduct');
+
+
+//Add to cart Routes
+Route::Get('/addToCart/{id}', 'App\Http\Controllers\Api\CartController@AddToCart');
+Route::Get('/cart/product', 'App\Http\Controllers\Api\CartController@cartProduct');
+Route::Get('/remove/cart/{id}', 'App\Http\Controllers\Api\CartController@removeCart');
