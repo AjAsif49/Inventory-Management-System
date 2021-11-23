@@ -42,3 +42,9 @@ Route::Get('/getting/product/{id}', 'App\Http\Controllers\Api\PosController@GetP
 Route::Get('/addToCart/{id}', 'App\Http\Controllers\Api\CartController@AddToCart');
 Route::Get('/cart/product', 'App\Http\Controllers\Api\CartController@cartProduct');
 Route::Get('/remove/cart/{id}', 'App\Http\Controllers\Api\CartController@removeCart');
+
+Route::Get('/increment/{id}', 'App\Http\Controllers\Api\CartController@increment');
+Route::Get('/decrement/{id}', 'App\Http\Controllers\Api\CartController@decrement');
+
+//Vat Route
+Route::Get('/vats', 'App\Http\Controllers\Api\CartController@Vats');
