@@ -74,10 +74,10 @@
 
                   <br>
 
-                <form>
+                <form @submit.prevent="orderdone">
                   <label for="">Customer Name</label>
                   <select class="form-control" v-model="customer_id">
-                    <option v-for="customer in customers" :key="customer.id">{{ customer.name }}</option>
+                    <option :value="customer.id" v-for="customer in customers" :key="customer.id">{{ customer.name }}</option>
                   </select>
 
                   <label for="">Pay</label>
@@ -87,7 +87,7 @@
                   <input type="text" class="form-control" required="" v-model="due">
 
                   <label for="">Pay By</label>
-                  <select class="form-control" v-model="customer_id">
+                  <select class="form-control" v-model="payby">
                     <option value="Cash">Cash</option>
                     <option value="Checque">Cheque</option>
                     <option value="GiftCard">Gift Card</option>
@@ -208,6 +208,11 @@
     },
       data(){
         return{
+          customer_id: '',
+          pay: '',
+          due:'',
+          payby:'',
+
           products:[],
           categories:'',
           getproducts: [],
@@ -298,6 +303,16 @@
         axios.get('/api/vats/')
         .then(({data}) => (this.vats = data))
         .catch()
+      },
+
+      orderdone(){
+        let total = this.subtotal*this.vats.vat / 100 + this.subtotal;
+        var data = { qty:this.qty, subtotal:this.subtotal, customer_id:this.customer_id, payby:this.payby, due:this.due, vat:this.vats.vat, total:total }
+        axios.post('/api/orderdone', data)
+        .then(()=>{
+          Notification.success()
+          // this.$router.push({name: 'home'})
+        })
       },
 
       //End of Cart methods
