@@ -4644,11 +4644,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   orderdone: function orderdone() {
     var _this6 = this;
 
-    var total = this.subtotal * this.vats.vat / 100 + this.subtotal;
+    var total = this.subTotal * this.vats.vat / 100 + this.subTotal;
     var data = {
       qty: this.qty,
-      subtotal: this.subtotal,
+      subTotal: this.subTotal,
       customer_id: this.customer_id,
+      pay: this.pay,
       payby: this.payby,
       due: this.due,
       vat: this.vats.vat,
