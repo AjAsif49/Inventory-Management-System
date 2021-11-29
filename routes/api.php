@@ -50,3 +50,6 @@ Route::Get('/decrement/{id}', 'App\Http\Controllers\Api\CartController@decrement
 Route::Get('/vats', 'App\Http\Controllers\Api\CartController@Vats');
 
 Route::Post('/orderdone', 'App\Http\Controllers\Api\PosController@OrderDone');
+
+//Order Route
+Route::Get('/orders', 'App\Http\Controllers\Api\OrderController@TodayOrder');

@@ -61,6 +61,9 @@ let editcustomer = require('./components/customer/edit.vue').default;
 let pos = require('./components/pos/pointofsale.vue').default;
 
 
+//POS Component
+let order = require('./components/order/order.vue').default;
+
 
 export const routes = [
     { path: '/', component: login, name: '/' },
@@ -119,5 +122,9 @@ export const routes = [
 
     //POS Routes
     { path: '/pos', component: pos, name: 'pos' },
+
+
+     //Order Routes
+    { path: '/order', component: order, name: 'order' },
 
   ]
