@@ -4437,9 +4437,163 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: D:\\sdlab\\inventory\\resources\\js\\components\\order\\vieworder.vue: Identifier 'id' has already been declared. (251:12)\n\n\u001b[0m \u001b[90m 249 |\u001b[39m         \u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(console\u001b[33m.\u001b[39mlog(\u001b[32m'error'\u001b[39m))\u001b[0m\n\u001b[0m \u001b[90m 250 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 251 |\u001b[39m         \u001b[36mlet\u001b[39m id \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m$route\u001b[33m.\u001b[39mparams\u001b[33m.\u001b[39mid\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 252 |\u001b[39m         axios\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m'/api/order/details/'\u001b[39m\u001b[33m+\u001b[39mid)\u001b[0m\n\u001b[0m \u001b[90m 253 |\u001b[39m         \u001b[33m.\u001b[39mthen(({data}) \u001b[33m=>\u001b[39m (\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39morders \u001b[33m=\u001b[39m data))\u001b[0m\n\u001b[0m \u001b[90m 254 |\u001b[39m         \u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(console\u001b[33m.\u001b[39mlog(\u001b[32m'error'\u001b[39m))\u001b[0m\n    at Parser._raise (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:541:17)\n    at Parser.raiseWithData (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:534:17)\n    at Parser.raise (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:495:17)\n    at ScopeHandler.checkRedeclarationInScope (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:1686:12)\n    at ScopeHandler.declareName (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:1652:12)\n    at Parser.checkLVal (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:10919:24)\n    at Parser.parseVarId (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13831:10)\n    at Parser.parseVar (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13806:12)\n    at Parser.parseVarStatement (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13623:10)\n    at Parser.parseStatementContent (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13208:21)\n    at Parser.parseStatement (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13139:17)\n    at Parser.parseBlockOrModuleBlockBody (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13728:25)\n    at Parser.parseBlockBody (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13719:10)\n    at Parser.parseBlock (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:13703:10)\n    at Parser.parseFunctionBody (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:12582:24)\n    at Parser.parseFunctionBodyAndFinish (D:\\sdlab\\inventory\\node_modules\\@babel\\parser\\lib\\index.js:12566:10)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var _created$data$created;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_created$data$created = {
+  created: function created() {
+    if (!User.loggedIn()) {
+      this.$router.push({
+        name: '/'
+      });
+    }
+  },
+  data: function data() {
+    return {
+      errors: {},
+      orders: {},
+      details: {}
+    };
+  }
+}, _defineProperty(_created$data$created, "created", function created() {
+  var _this = this;
+
+  var id = this.$route.params.id;
+  axios.get('/api/order/details/' + id).then(function (_ref) {
+    var data = _ref.data;
+    return _this.orders = data;
+  })["catch"](console.log('error'));
+  axios.get('/api/order/orderdetails/' + id).then(function (_ref2) {
+    var data = _ref2.data;
+    return _this.details = data;
+  })["catch"](console.log('error'));
+}), _defineProperty(_created$data$created, "methods", {}), _created$data$created);
 
 /***/ }),
 
@@ -11843,6 +11997,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n#em_photo{\r\n  height: 40px;\r\n  w
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/employee/index.vue?vue&type=style&index=0&lang=css& ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n#em_photo{\r\n  height: 40px;\r\n  width: 40px;\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -46266,6 +46444,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_vieworder_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./vieworder.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_vieworder_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_vieworder_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pos/pointofsale.vue?vue&type=style&index=0&id=e7fc9010&scoped=true&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pos/pointofsale.vue?vue&type=style&index=0&id=e7fc9010&scoped=true&lang=css& ***!
@@ -50670,15 +50878,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _vieworder_vue_vue_type_template_id_64350ecd___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vieworder.vue?vue&type=template&id=64350ecd& */ "./resources/js/components/order/vieworder.vue?vue&type=template&id=64350ecd&");
 /* harmony import */ var _vieworder_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vieworder.vue?vue&type=script&lang=js& */ "./resources/js/components/order/vieworder.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _vieworder_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vieworder.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _vieworder_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _vieworder_vue_vue_type_template_id_64350ecd___WEBPACK_IMPORTED_MODULE_0__.render,
   _vieworder_vue_vue_type_template_id_64350ecd___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -51823,6 +52033,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./index.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/employee/index.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css& ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_vieworder_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./vieworder.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/order/vieworder.vue?vue&type=style&index=0&lang=css&");
 
 
 /***/ }),
@@ -57025,227 +57248,47 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _vm._m(0)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-xl-12 col-lg-12 col-md-12" }, [
         _c("div", { staticClass: "card shadow-sm my-5" }, [
           _c("div", { staticClass: "card-body p-0" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-lg-12" }, [
                 _c("div", { staticClass: "login-form" }, [
-                  _c("div", { staticClass: "text-center" }, [
-                    _c("h1", { staticClass: "h4 text-gray-900 mb-4" }, [
-                      _vm._v("Order Details")
-                    ])
-                  ]),
+                  _vm._m(0),
                   _vm._v(" "),
                   _c("div", { staticClass: "row" }, [
                     _c("div", { staticClass: "col-lg-6 mb-4" }, [
                       _c("div", { staticClass: "card" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                          },
-                          [
-                            _c(
-                              "h6",
-                              {
-                                staticClass: "m-0 font-weight-bold text-primary"
-                              },
-                              [_vm._v("Simple Tables")]
-                            )
-                          ]
-                        ),
+                        _vm._m(1),
                         _vm._v(" "),
                         _c("div", { staticClass: "table-responsive" }, [
-                          _c(
-                            "table",
-                            {
-                              staticClass:
-                                "table align-items-center table-flush"
-                            },
-                            [
-                              _c("thead", { staticClass: "thead-light" }, [
-                                _c("tr", [
-                                  _c("th", [_vm._v("Order ID")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Customer")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Item")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Status")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Action")])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tbody", [
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA0449")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Wayang")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Nasi Padang")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA5324")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Jaenab Bajigur")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Gundam 90' Edition")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-warning" },
-                                      [_vm._v("Shipping")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA8568")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Rivat Mahesa")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Oblong T-Shirt")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-danger" },
-                                      [_vm._v("Pending")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1453")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Indri Junanda")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Hat Rounded")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-info" },
-                                      [_vm._v("Processing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1998")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Cilok")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Baby Powder")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
+                          _c("ul", { staticClass: "list-group" }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Name:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.name))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Phone:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.phone))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Address:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.address))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Date:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.order_date))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Pay Through:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.payby))
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "card-footer" })
@@ -57254,203 +57297,35 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("div", { staticClass: "col-lg-6 mb-4" }, [
                       _c("div", { staticClass: "card" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                          },
-                          [
-                            _c(
-                              "h6",
-                              {
-                                staticClass: "m-0 font-weight-bold text-primary"
-                              },
-                              [_vm._v("Simple Tables")]
-                            )
-                          ]
-                        ),
+                        _vm._m(2),
                         _vm._v(" "),
                         _c("div", { staticClass: "table-responsive" }, [
-                          _c(
-                            "table",
-                            {
-                              staticClass:
-                                "table align-items-center table-flush"
-                            },
-                            [
-                              _c("thead", { staticClass: "thead-light" }, [
-                                _c("tr", [
-                                  _c("th", [_vm._v("Order ID")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Customer")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Item")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Status")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Action")])
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tbody", [
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA0449")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Wayang")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Nasi Padang")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA5324")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Jaenab Bajigur")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Gundam 90' Edition")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-warning" },
-                                      [_vm._v("Shipping")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA8568")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Rivat Mahesa")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Oblong T-Shirt")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-danger" },
-                                      [_vm._v("Pending")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1453")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Indri Junanda")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Hat Rounded")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-info" },
-                                      [_vm._v("Processing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1998")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Cilok")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Baby Powder")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
+                          _c("ul", { staticClass: "list-group" }, [
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Sub Total:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.sub_total))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Vat:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.vat))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Total:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.total))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("paid Amount:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.pay))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "list-group-item" }, [
+                              _c("b", [_vm._v("Due Amount:")]),
+                              _vm._v(" " + _vm._s(_vm.orders.due))
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "card-footer" })
@@ -57461,22 +57336,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "row" }, [
                     _c("div", { staticClass: "col-lg-12 mb-4" }, [
                       _c("div", { staticClass: "card" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                          },
-                          [
-                            _c(
-                              "h6",
-                              {
-                                staticClass: "m-0 font-weight-bold text-primary"
-                              },
-                              [_vm._v("Simple Tables")]
-                            )
-                          ]
-                        ),
+                        _vm._m(3),
                         _vm._v(" "),
                         _c("div", { staticClass: "table-responsive" }, [
                           _c(
@@ -57486,176 +57346,42 @@ var staticRenderFns = [
                                 "table align-items-center table-flush"
                             },
                             [
-                              _c("thead", { staticClass: "thead-light" }, [
-                                _c("tr", [
-                                  _c("th", [_vm._v("Order ID")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Customer")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Item")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Status")]),
-                                  _vm._v(" "),
-                                  _c("th", [_vm._v("Action")])
-                                ])
-                              ]),
+                              _vm._m(4),
                               _vm._v(" "),
-                              _c("tbody", [
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA0449")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Wayang")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Nasi Padang")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.details, function(detail) {
+                                  return _c("tr", { key: detail.id }, [
+                                    _c("td", [
+                                      _vm._v(_vm._s(detail.product_name))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(_vm._s(detail.product_code))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _c("img", {
+                                        attrs: {
+                                          src: "/" + detail.image,
+                                          id: "em_photo"
+                                        }
+                                      })
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(_vm._s(detail.pro_quantity))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(_vm._s(detail.product_price))
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v(_vm._s(detail.sub_total))])
                                   ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA5324")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Jaenab Bajigur")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Gundam 90' Edition")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-warning" },
-                                      [_vm._v("Shipping")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA8568")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Rivat Mahesa")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Oblong T-Shirt")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-danger" },
-                                      [_vm._v("Pending")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1453")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Indri Junanda")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Hat Rounded")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-info" },
-                                      [_vm._v("Processing")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v("RA1998")
-                                    ])
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Udin Cilok")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("Baby Powder")]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "span",
-                                      { staticClass: "badge badge-success" },
-                                      [_vm._v("Delivered")]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "btn btn-sm btn-primary",
-                                        attrs: { href: "#" }
-                                      },
-                                      [_vm._v("Detail")]
-                                    )
-                                  ])
-                                ])
-                              ])
+                                }),
+                                0
+                              )
                             ]
                           )
                         ]),
@@ -57675,6 +57401,89 @@ var staticRenderFns = [
             ])
           ])
         ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center" }, [
+      _c("h1", { staticClass: "h4 text-gray-900 mb-4" }, [
+        _vm._v("Order Details")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "card-header py-3 d-flex flex-row align-items-center justify-content-between"
+      },
+      [
+        _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
+          _vm._v("Order Details")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "card-header py-3 d-flex flex-row align-items-center justify-content-between"
+      },
+      [
+        _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
+          _vm._v("Order Details")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "card-header py-3 d-flex flex-row align-items-center justify-content-between"
+      },
+      [
+        _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
+          _vm._v("Order Details")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", { staticClass: "thead-light" }, [
+      _c("tr", [
+        _c("th", [_vm._v("Product Name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Product Code")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Image")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Quantity")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Unit Price")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Total")])
       ])
     ])
   }
