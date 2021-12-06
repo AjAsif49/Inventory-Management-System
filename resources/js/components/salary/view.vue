@@ -2,7 +2,7 @@
     <div>
 
         <div class="row">
-            <router-link to="/salary" class="btn btn-primary">Go Back</router-link>
+            <router-link to="/salary" class="btn btn-primary" ><i class="fa fa-arrow-left"></i> Go Back</router-link>
         </div>
 
   <br>
