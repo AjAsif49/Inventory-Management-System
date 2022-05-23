@@ -37,7 +37,6 @@ Route::Post('/stock/update/{id}', 'App\Http\Controllers\Api\ProductController@St
 
 Route::Get('/getting/product/{id}', 'App\Http\Controllers\Api\PosController@GetProduct');
 
-
 //Add to cart Routes
 Route::Get('/addToCart/{id}', 'App\Http\Controllers\Api\CartController@AddToCart');
 Route::Get('/cart/product', 'App\Http\Controllers\Api\CartController@cartProduct');
@@ -63,4 +62,10 @@ Route::Get('/today/income', 'App\Http\Controllers\Api\PosController@TodayIncome'
 Route::Get('/today/due', 'App\Http\Controllers\Api\PosController@TodayDue');
 Route::Get('/today/expense', 'App\Http\Controllers\Api\PosController@TodayExpense');
 Route::Get('/today/stockout', 'App\Http\Controllers\Api\PosController@StockOut');
+
+
+// Route::Get('barcode', 'App\Http\Controllers\Api\OrderController@Barcode');
+
+
+
 

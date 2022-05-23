@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->integer('supplier_id')->nullable();
             $table->string('buying_date')->nullable();
             $table->string('image')->nullable();
+            $table->text('barcode')->nullable();
             $table->string('product_quantity');
             $table->timestamps();
         });

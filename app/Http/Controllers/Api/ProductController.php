@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Model\Product;
 use App\Http\Controllers\Controller;
 use Image;
+use Picqer;
 
 
 class ProductController extends Controller
@@ -61,10 +62,21 @@ class ProductController extends Controller
             $img->save($image_url);
 
 
+            // $product_code = rand(101010101, 100000000);
+            $product_code = $request->product_code;
+            
+            $redColor = '255, 0 0';
+            $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
+            $barcode = $generator->getBarcode($product_code,  
+            $generator::TYPE_STANDARD_2_5, 2, 60);
+
+            
+
             $product = new Product;
             $product->category_id	 = $request->category_id;
             $product->product_name = $request->product_name;
             $product->product_code = $request->product_code;
+            $product->barcode = $barcode;
             $product->root = $request->root;
             $product->buying_price	 = $request->buying_price;
             $product->selling_price	 = $request->selling_price;
@@ -173,4 +185,5 @@ class ProductController extends Controller
         DB::table('products')->where('id', $id)->update($data);
 
     }
+    
 }

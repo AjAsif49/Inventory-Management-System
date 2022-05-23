@@ -17,6 +17,7 @@ class Product extends Model
         'supplier_id',
         'buying_date',
         'image',
+        'barcode',
         'product_quantity'
     ];
 }

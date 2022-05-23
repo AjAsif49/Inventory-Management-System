@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use DB; 
 use DateTime;
+use Illuminate\Http\Request;
+use App\Models\Model\Product;
+use App\Http\Controllers\Controller;
 
 
 class PosController extends Controller
@@ -102,4 +103,10 @@ class PosController extends Controller
         return response()->json($product);
     }
      
+    // public function Barcode()
+    // {       
+    //     return $products = Product::select('barcode')->get();
+    //     return view('products.barcode');
+    // }
+
 }

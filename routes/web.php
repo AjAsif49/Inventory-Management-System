@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BarcodeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('barcodes', function () {
+//     return $products = Product::select('barcode')->get();
+//     return view('products.barcode.index');
+// })->name('all.barcode');
+
+// Route::Get('barcode', 'App\Http\Controllers\BarcodeController@Barcode')->name('all.barcode');
+Route::get('/barcode', [BarcodeController::class, 'Barcode'])->name('all.barcode');
+
 Route::get('/{vue_capture?}',function () {
     return view('welcome');
 })->where('vue_capture', '[\/\w\.-]*');
+
+
+
+
+
+
+
+

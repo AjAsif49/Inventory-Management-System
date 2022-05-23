@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use DB;
+use Illuminate\Http\Request;
+use App\Models\Model\Product;
+use App\Http\Controllers\Controller;
 
 
 
@@ -38,4 +39,9 @@ class OrderController extends Controller
             ->get();
             return response()->json($details);
     }
+
+    // public function Barcode(){
+    //     $productsBarcode = Product::select('product_name')->get();
+    //     return view('products.barcode.index', compact('productsBarcode'));
+    // }
 }

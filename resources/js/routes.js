@@ -31,6 +31,8 @@ let editcategory = require('./components/category/edit.vue').default;
 let storeproduct = require('./components/product/create.vue').default;
 let product = require('./components/product/index.vue').default;
 let editproduct = require('./components/product/edit.vue').default;
+// let barcode = require('./components/product/barcode.vue').default;
+
 
 
 //expense Component
@@ -50,6 +52,7 @@ let editsalary = require('./components/salary/edit.vue').default;
 //product Component
 let stock = require('./components/product/stock.vue').default;
 let editstock = require('./components/product/edit-stock.vue').default;
+
 
 //Customer Component
 let storecustomer = require('./components/customer/create.vue').default;
@@ -94,6 +97,9 @@ export const routes = [
     { path: '/store-product', component: storeproduct, name:'store-product' },
     { path: '/product', component: product, name: 'product' },
     { path: '/edit-product/:id', component: editproduct, name: 'edit-product' },
+    // { path: 'barcode', component: barcode, name: 'barcode' },
+
+
 
 
     //expense Routes

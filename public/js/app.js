@@ -5625,8 +5625,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
   created: function created() {
     if (!User.loggedIn()) {
@@ -7345,7 +7343,8 @@ var storeproduct = __webpack_require__(/*! ./components/product/create.vue */ ".
 
 var product = __webpack_require__(/*! ./components/product/index.vue */ "./resources/js/components/product/index.vue")["default"];
 
-var editproduct = __webpack_require__(/*! ./components/product/edit.vue */ "./resources/js/components/product/edit.vue")["default"]; //expense Component
+var editproduct = __webpack_require__(/*! ./components/product/edit.vue */ "./resources/js/components/product/edit.vue")["default"]; // let barcode = require('./components/product/barcode.vue').default;
+//expense Component
 
 
 var storeexpense = __webpack_require__(/*! ./components/expense/create.vue */ "./resources/js/components/expense/create.vue")["default"];
@@ -7459,7 +7458,8 @@ var routes = [{
   path: '/edit-product/:id',
   component: editproduct,
   name: 'edit-product'
-}, //expense Routes
+}, // { path: 'barcode', component: barcode, name: 'barcode' },
+//expense Routes
 {
   path: '/store-expense',
   component: storeexpense,
@@ -59537,8 +59537,6 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(product.selling_price))]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(product.root))]),
-                      _vm._v(" "),
                       _c(
                         "td",
                         [
@@ -59625,8 +59623,6 @@ var staticRenderFns = [
         _c("th", [_vm._v("Buying Price")]),
         _vm._v(" "),
         _c("th", [_vm._v("Selling Price")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Root")]),
         _vm._v(" "),
         _c("th", [_vm._v("Action")])
       ])
