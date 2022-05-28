@@ -1,7 +1,7 @@
-@extends('welcome')
+{{-- @extends('welcome')
 
 @section('content')   
-    <div class="container-fluid" id="container-wrapper">
+<div class="container-fluid" id="" v-show="$route.path === '/barcode' ? true : false">
         <div class="card-body">
             <div id="print">
                 <h1>Product Barcodes</h1>
@@ -21,4 +21,4 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection --}}

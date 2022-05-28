@@ -82,9 +82,10 @@
 
                   <label for="">Pay</label>
                   <input type="text" class="form-control" required="" v-model="pay">
-
+                  <br>
                   <label for="">Due</label>
-                  <input type="text" class="form-control" required="" v-model="due">
+                  <!-- <input type="text" class="form-control" required="" v-model="due"> -->
+                  <h5><b>{{ due = subTotal*vats.vat/100 + subTotal - pay }}</b></h5>
 
                   <label for="">Pay By</label>
                   <select class="form-control" v-model="payby">
@@ -106,7 +107,7 @@
             <div class="col-xl-7 col-lg-7">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Products Sold</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Products</h6>
                   
                 </div>
 
@@ -212,7 +213,6 @@
           pay: '',
           due:'',
           payby:'',
-
           products:[],
           categories:'',
           getproducts: [],

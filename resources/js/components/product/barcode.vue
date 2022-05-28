@@ -1,12 +1,42 @@
+<!-- <template>
+  <div id="app">
+  <input v-model="barcodeValue" /><br>
+  <barcode :v-bind:value="barcodeValue" font-options="bold">
+    Can't generate the barcode
+  </barcode>
+</div>
+</template>
+
+<script>
+import VueBarcode from 'vue-barcode';
+export default {
+ 
+  
+  data: {
+    barcodeValue: 'test',
+  },
+  components: {
+		'barcode': VueBarcode
+	}
+}
+</script> -->
+
+
+
+
+
+
+
+
 <template>
     <div>
 
         <div class="row">
-            <router-link to="/store-customer" class="btn btn-primary">Add Customer</router-link>
+            <router-link to="/store-product" class="btn btn-primary">Add Product</router-link>
         </div>
 
   <br>
-    <input type="text" v-model="searchTerm" class="form-control" style="width:300px;" placeholder="Search Customer">
+    <input type="text" v-model="searchTerm" class="form-control" style="width:300px;" placeholder="Search Product">
   <br>
 
           <div class="row">
@@ -14,31 +44,21 @@
               <!-- Simple Tables -->
               <div class="card">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Customer List</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Product List</h6>
                 </div>
                 <div class="table-responsive">
                   <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
-                        <th>Name</th>
-                        <th>Photo</th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Action</th>
+                        <th>Barcode</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="customer in filterSearch" :key="customer.id">
-                        <td> {{ customer.name }} </td>
-                        <td><img :src="customer.photo" id="em_photo" ></td>
-                        <td>{{ customer.phone }}</td>
-                        <td>{{ customer.email }}</td>
-                        <td>{{ customer.address }}</td>
-                         <td>
-                           <router-link :to="{ name: 'edit-customer', params:{id:customer.id}}" class="btn btn-sm btn-primary">Edit</router-link>
-                           <a @click="deleteCustomer(customer.id)" class="btn btn-sm btn-danger" ><font color= "#ffffff">Delete</font></a>
-                          </td>
+                      <tr v-for="product in filterSearch" :key="product.id">
+                        <td>
+                          <barcode :value="product.product_name"> {{ product.barcode  }}</barcode>
+                        </td>
                       </tr>
                       
                     </tbody>
@@ -56,6 +76,7 @@
 
 
 <script>
+import VueBarcode from 'vue-barcode';
 
     export default{
 
@@ -67,14 +88,18 @@
       },
       data(){
         return{
-          customers:[],
+          products:[],
+          barcodeValue: '',
           searchTerm: ''
         }
       },
+      components: {
+      'barcode': VueBarcode
+      },
       computed:{
         filterSearch(){
-          return this.customers.filter(customer => {
-            return customer.name.match(this.searchTerm)
+          return this.products.filter(product => {
+            return product.product_name.match(this.searchTerm)
           })
         }
       },
@@ -83,12 +108,12 @@
      
     
     methods:{
-      allCustomer(){
-        axios.get('/api/customer/')
-        .then(({data}) => (this.customers = data))
+      allProduct(){
+        axios.get('/api/product/')
+        .then(({data}) => (this.products = data))
         .catch()
       },
-      deleteCustomer(id){
+      deleteProduct(id){
         Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -99,14 +124,14 @@
         confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
         if (result.value) {
-          axios.delete('/api/customer/'+id)
+          axios.delete('/api/product/'+id)
           .then(() => {
-            this.customers = this.customers.filter(customer =>{
-              return customer.id != id
+            this.products = this.products.filter(product =>{
+              return product.id != id
             } )
           })
           .catch(() =>{
-            this.$router.push({name: 'customer'})
+            this.$router.push({name: 'product'})
           })
           Swal.fire(
             'Deleted!',
@@ -118,7 +143,7 @@
       }
     },
     created(){
-      this.allCustomer();
+      this.allProduct();
     }
 
     }

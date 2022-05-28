@@ -58,6 +58,7 @@
 
 
 <script>
+// import VueBarcode from 'vue-barcode';
 
     export default{
 
@@ -70,9 +71,13 @@
       data(){
         return{
           products:[],
+          // barcodeValue: '',
           searchTerm: ''
         }
       },
+      // components: {
+      // 'barcode': VueBarcode
+      // },
       computed:{
         filterSearch(){
           return this.products.filter(product => {

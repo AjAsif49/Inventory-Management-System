@@ -39,9 +39,4 @@ class OrderController extends Controller
             ->get();
             return response()->json($details);
     }
-
-    // public function Barcode(){
-    //     $productsBarcode = Product::select('product_name')->get();
-    //     return view('products.barcode.index', compact('productsBarcode'));
-    // }
 }

@@ -1,4 +1,4 @@
-<nav id="sidebar" style="display: none" v-show="$route.path === '/' || $route.path === 'register' || $route.path === 'forget' ? false : true">
+<nav id="sidebar" style="display: none" v-show="$route.path === '/' || $route.path === '/register' || $route.path === '/forget' ? false : true">
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/home">
         <div class="sidebar-brand-icon">
@@ -80,7 +80,9 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <router-link class="collapse-item" to="/store-product">Add Product</router-link>
             <router-link class="collapse-item" to="/product">All Product</router-link>
-            <a class="collapse-item" href="{{ route('all.barcode') }}">Barcode</a>
+            <router-link class="collapse-item" to="/barcode">Barcode</router-link>
+
+            {{-- <a class="collapse-item" href="{{ route('all.barcode') }}">Barcode</a> --}}
 
           </div>
         </div>

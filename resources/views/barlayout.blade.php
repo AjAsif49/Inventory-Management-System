@@ -19,22 +19,17 @@
 <body id="page-top">
 <div id="app">
   <div id="wrapper">
-
     <!-- Sidebar -->    
     @include('includes.sidebar')
     <!-- Sidebar -->
-
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
-
         <!-- TopBar -->
           @include('includes.topbar')
         <!-- Topbar -->
-        
 
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
-          <router-view></router-view>
           <main class="py-4">
             @yield('content')
           </main>

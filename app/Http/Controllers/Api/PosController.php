@@ -102,11 +102,5 @@ class PosController extends Controller
         $product = DB::table('products')->where('product_quantity', '<', '1')->get();
         return response()->json($product);
     }
-     
-    // public function Barcode()
-    // {       
-    //     return $products = Product::select('barcode')->get();
-    //     return view('products.barcode');
-    // }
 
 }
