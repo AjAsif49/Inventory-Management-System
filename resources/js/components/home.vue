@@ -116,7 +116,7 @@
                         <td>{{ product.buying_price }}</td>
 
                         <td v-if="product.product_quantity >= 1"><span class="badge badge-success"> Available </span></td>
-                        <td v-else-if= " product.product_quantity < 1 "   ><span class="badge badge-danger"> Stock Out </span></td>
+                        <td v-else-if= "product.product_quantity < 1 "><span class="badge badge-danger"> Stock Out </span></td>
 
                         <td>{{ product.product_quantity }}</td>
                          

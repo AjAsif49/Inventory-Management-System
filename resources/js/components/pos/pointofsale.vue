@@ -127,17 +127,18 @@
                     
     <input type="text" v-model="searchTerm" class="form-control" style="width:300px;" placeholder="Search Product">
 
-                    <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="product in filterSearch" :key="product.id">
+                   <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="product in filterSearch" :key="product.id" v-show="product.product_quantity >= 1 ? true : false">
                         <button class="btn btn-sm" @click.prevent="AddToCart(product.id)">
                             <div class="card" style="width: 8.5rem; margin-bottom:5px;">
                             <img :src="product.image" id="em_photo" class="card-img-top">
                             <div class="card-body">
                                 <h6 class="card-title">{{ product.product_name }}</h6>
                             <span class="badge badge-success" v-if="product.product_quantity >= 1"> Available {{ product.product_quantity }}</span>
-                            <span class="badge badge-danger" v-else-if="product.product_quantity < 1" > Stock Out </span>
+                            <span class="badge badge-danger" v-else-if="product.product_quantity < 1"> Stock Out </span>                            
+                             </div>
                             </div>
-                            </div></button>
+                        </button>
                         </div>
                     </div>
        </div>
@@ -148,7 +149,7 @@
      <input type="text" v-model="getsearchTerm" class="form-control" style="width:300px;" placeholder="Search Product">
 
                     <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="getproduct in getfilterSearch" :key="getproduct.id">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6" v-for="getproduct in getfilterSearch" :key="getproduct.id" v-show="getproduct.product_quantity >= 1 ? true : false">
                         <button class="btn btn-sm" @click.prevent="AddToCart(getproduct.id)">
                             <div class="card" style="width: 8.5rem; margin-bottom:5px;">
                             <img :src="getproduct.image" id="em_photo" class="card-img-top">
@@ -207,6 +208,7 @@
         this.cartProduct();
       })
     },
+
       data(){
         return{
           customer_id: '',
@@ -314,6 +316,7 @@
           this.$router.push({name: 'home'})
         })
       },
+      
 
       //End of Cart methods
       allProduct(){

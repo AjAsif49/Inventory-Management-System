@@ -4828,6 +4828,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_created$created$data = {
   created: function created() {
     if (!User.loggedIn()) {
@@ -5012,6 +5013,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_barcode__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_barcode__WEBPACK_IMPORTED_MODULE_0__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
 //
 //
 //
@@ -5729,6 +5731,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
 //
 //
 //
@@ -61977,6 +61981,18 @@ var render = function() {
                             return _c(
                               "div",
                               {
+                                directives: [
+                                  {
+                                    name: "show",
+                                    rawName: "v-show",
+                                    value:
+                                      product.product_quantity >= 1
+                                        ? true
+                                        : false,
+                                    expression:
+                                      "product.product_quantity >= 1 ? true : false"
+                                  }
+                                ],
                                 key: product.id,
                                 staticClass: "col-lg-3 col-md-3 col-sm-6 col-6"
                               },
@@ -62107,6 +62123,18 @@ var render = function() {
                           return _c(
                             "div",
                             {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value:
+                                    getproduct.product_quantity >= 1
+                                      ? true
+                                      : false,
+                                  expression:
+                                    "getproduct.product_quantity >= 1 ? true : false"
+                                }
+                              ],
                               key: getproduct.id,
                               staticClass: "col-lg-3 col-md-3 col-sm-6 col-6"
                             },
@@ -62362,33 +62390,33 @@ var render = function() {
           _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "table-responsive" }, [
-            _c(
-              "table",
-              { staticClass: "table align-items-center table-flush" },
-              [
-                _vm._m(1),
-                _vm._v(" "),
-                _c(
-                  "tbody",
-                  _vm._l(_vm.filterSearch, function(product) {
-                    return _c("tr", { key: product.id }, [
-                      _c(
-                        "td",
-                        [
-                          _c(
-                            "barcode",
-                            { attrs: { value: product.product_name } },
-                            [_vm._v(" " + _vm._s(product.barcode))]
-                          )
-                        ],
-                        1
-                      )
-                    ])
-                  }),
-                  0
-                )
-              ]
-            )
+            _c("table", { staticClass: "table  table-flush" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.filterSearch, function(product) {
+                  return _c("tr", { key: product.id }, [
+                    _c("td", [
+                      _c("h2", [_vm._v(_vm._s(product.product_name))])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      [
+                        _c(
+                          "barcode",
+                          { attrs: { value: product.product_code } },
+                          [_vm._v(" " + _vm._s(product.barcode))]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                }),
+                0
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-footer" })
@@ -62410,7 +62438,7 @@ var staticRenderFns = [
       },
       [
         _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-          _vm._v("Product List")
+          _vm._v("Product Barcodes")
         ])
       ]
     )
@@ -62419,8 +62447,12 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "thead-light" }, [
-      _c("tr", [_c("th", [_vm._v("Barcode")])])
+    return _c("thead", { staticClass: "thead-light col-lg-6" }, [
+      _c("tr", [
+        _c("th", [_vm._v("Product Name")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Barcode")])
+      ])
     ])
   }
 ]
@@ -63866,6 +63898,8 @@ var render = function() {
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(product.selling_price))]),
                       _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(product.product_quantity))]),
+                      _vm._v(" "),
                       _c(
                         "td",
                         [
@@ -63952,6 +63986,8 @@ var staticRenderFns = [
         _c("th", [_vm._v("Buying Price")]),
         _vm._v(" "),
         _c("th", [_vm._v("Selling Price")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Product Quantity")]),
         _vm._v(" "),
         _c("th", [_vm._v("Action")])
       ])

@@ -62,6 +62,10 @@ Route::Get('/today/income', 'App\Http\Controllers\Api\PosController@TodayIncome'
 Route::Get('/today/due', 'App\Http\Controllers\Api\PosController@TodayDue');
 Route::Get('/today/expense', 'App\Http\Controllers\Api\PosController@TodayExpense');
 Route::Get('/today/stockout', 'App\Http\Controllers\Api\PosController@StockOut');
+// Route::Get('/today/available', 'App\Http\Controllers\Api\PosController@Available');
+// Route::Get('/today/getavailable', 'App\Http\Controllers\Api\PosController@GetAvailable');
+
+
 
 
 //Barcode Route

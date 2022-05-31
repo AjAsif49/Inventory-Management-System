@@ -44,20 +44,21 @@ export default {
               <!-- Simple Tables -->
               <div class="card">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Product List</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Product Barcodes</h6>
                 </div>
                 <div class="table-responsive">
-                  <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
+                  <table class="table  table-flush">
+                    <thead class="thead-light col-lg-6">
                       <tr>
+                        <th>Product Name</th>
                         <th>Barcode</th>
-                        
                       </tr>
                     </thead>
                     <tbody>
                       <tr v-for="product in filterSearch" :key="product.id">
+                        <td><h2>{{ product.product_name }}</h2></td>
                         <td>
-                          <barcode :value="product.product_name"> {{ product.barcode  }}</barcode>
+                          <barcode :value="product.product_code"> {{ product.barcode  }}</barcode>
                         </td>
                       </tr>
                       

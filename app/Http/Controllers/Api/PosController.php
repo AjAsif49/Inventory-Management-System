@@ -103,4 +103,15 @@ class PosController extends Controller
         return response()->json($product);
     }
 
+    // public function Available(){
+    //     $product = DB::table('products')->where('product_quantity', '>', '1')->get();
+    //     return response()->json($product);
+    // }
+    
+    // public function GetAvailable(){
+    //     $product = DB::table('products')->where('product_quantity', '>', '1')->get();
+    //     return response()->json($product);
+    // }
+    
+
 }
