@@ -64,10 +64,16 @@ let editcustomer = require('./components/customer/edit.vue').default;
 let pos = require('./components/pos/pointofsale.vue').default;
 
 
-//POS Component
+let sendMail = require('./components/customer/send_mail.vue').default;
+
+
+
+//Order Component
 let order = require('./components/order/order.vue').default;
 let vieworder = require('./components/order/vieworder.vue').default;
 let searchorder = require('./components/order/search.vue').default;
+let cashmemo = require('./components/order/cashmemo.vue').default;
+
 
 export const routes = [
     { path: '/', component: login, name: '/' },
@@ -125,7 +131,7 @@ export const routes = [
     { path: '/store-customer', component: storecustomer, name:'store-customer' },
     { path: '/customer', component: customer, name: 'customer' },
     { path: '/edit-customer/:id', component: editcustomer, name: 'edit-customer' },
-
+    { path: '/send-mail-all', component: sendMail, name: 'send-mail' },
 
     //POS Routes
     { path: '/pos', component: pos, name: 'pos' },
@@ -135,5 +141,7 @@ export const routes = [
     { path: '/order', component: order, name: 'order' },
     { path: '/view-order/:id', component: vieworder, name: 'view-order' },
     { path: '/searchorder', component: searchorder, name: 'searchorder' },
+    { path: '/cashmemo/:id', component: cashmemo, name: 'cashmemo' },
+
 
 ]

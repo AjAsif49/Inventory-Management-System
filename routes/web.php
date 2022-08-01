@@ -22,12 +22,16 @@ Route::get('/', function () {
 
 // Route::get('/barcode', [BarcodeController::class, 'Barcode'])->name('all.barcode');
 
-
+// Route::get('/email', function () {
+//     Mail::to('email@email.com')->send(new WelcomeMail());
+//     return new WelcomeMail();
+// });
 
 
 Route::get('/{vue_capture?}',function () {
     return view('welcome');
 })->where('vue_capture', '[\/\w\.-]*');
+
 
 
 

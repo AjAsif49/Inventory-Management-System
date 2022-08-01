@@ -19,7 +19,7 @@
 <body id="page-top">
 <div id="app">
   <div id="wrapper">
-
+ 
     <!-- Sidebar -->    
     @include('includes.sidebar')
     <!-- Sidebar -->

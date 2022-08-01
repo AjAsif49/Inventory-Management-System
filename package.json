@@ -29,6 +29,8 @@
         "noty": "^3.2.0-beta-deprecated",
         "sweetalert2": "^11.1.9",
         "vue-barcode": "^1.3.0",
+        "vue-barcode-reader": "^1.0.2",
+        "vue-html-to-paper": "^1.4.4",
         "vue-router": "^3.5.2"
     }
 }

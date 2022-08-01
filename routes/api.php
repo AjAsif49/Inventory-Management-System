@@ -7,7 +7,7 @@ Route::group([
     'prefix' => 'auth'
 
 ], function ($router) {
-
+ 
     Route::post('login', 'AuthController@login');
     Route::post('signup', 'AuthController@signup');
     Route::post('logout', 'AuthController@logout');
@@ -36,6 +36,7 @@ Route::Post('/salary/update/{id}', 'App\Http\Controllers\Api\SalaryController@Up
 Route::Post('/stock/update/{id}', 'App\Http\Controllers\Api\ProductController@StockUpdate');
 
 Route::Get('/getting/product/{id}', 'App\Http\Controllers\Api\PosController@GetProduct');
+Route::Get('/barcode/product/{id}', 'App\Http\Controllers\Api\PosController@getBarProduct');
 
 //Add to cart Routes
 Route::Get('/addToCart/{id}', 'App\Http\Controllers\Api\CartController@AddToCart');
@@ -72,5 +73,5 @@ Route::Get('/today/stockout', 'App\Http\Controllers\Api\PosController@StockOut')
 // Route::Get('barcode', 'App\Http\Controllers\BarcodeController@Barcode');
 
 
-
+Route::Post('/send-mail', 'App\Http\Controllers\Api\PosController@SendMail');
 

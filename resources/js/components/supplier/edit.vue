@@ -55,8 +55,6 @@
                       <small class="text-danger" v-if="errors.phone" > {{ errors.phone[0] }} </small>
                       </div>
 
-                       <div class="col-md-6">
-                      </div>
                   </div>    
               </div>
 

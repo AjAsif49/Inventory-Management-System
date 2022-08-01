@@ -4,10 +4,15 @@ namespace App\Http\Controllers\Api;
 
 use DB; 
 use DateTime;
+use App\Mail\WelcomeMail;
 use Illuminate\Http\Request;
 use App\Models\Model\Product;
+use App\Models\Model\Customer;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
+
+  
 
 class PosController extends Controller
 {
@@ -15,7 +20,14 @@ class PosController extends Controller
         $product = DB::table('products')
                     ->where('category_id', $id)
                     ->get();
-                    return response()->json($product);
+        return response()->json($product);
+    }
+
+    public function getBarProduct($id){
+        $product = DB::table('products')
+                    ->where('product_code', $id)
+                    ->get();
+        return response()->json($product);
     }
 
     public function OrderDone(Request $request){
@@ -103,15 +115,24 @@ class PosController extends Controller
         return response()->json($product);
     }
 
-    // public function Available(){
-    //     $product = DB::table('products')->where('product_quantity', '>', '1')->get();
-    //     return response()->json($product);
-    // }
-    
-    // public function GetAvailable(){
-    //     $product = DB::table('products')->where('product_quantity', '>', '1')->get();
-    //     return response()->json($product);
-    // }
+    public function SendMail(Request $request)
+    {
+
+        $data = [
+            'announcement'=> $request->input('notes'), 
+        ];
+
+        $customers = Customer::select('email')->get();
+
+        foreach ($customers as $user){
+            Mail::to($user->email)->send(new WelcomeMail($data));
+        }
+        return $request;
+
+        
+    }
+
     
 
 }
+   

@@ -54,7 +54,6 @@
                           <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter Your Phone Number" v-model="form.phone">
                       <small class="text-danger" v-if="errors.phone" > {{ errors.phone[0] }} </small>
                       </div>
-
                        <div class="col-md-6">
                       </div>
                   </div>    
@@ -65,7 +64,8 @@
                       <div class="col-md-6">
                         <input type="file" class="custom-file-input" id="customFile" @change="onFileSelected"> 
                         <small class="text-danger" v-if="errors.photo" > {{ errors.photo[0] }} </small>
-                        <label class="custom-file-label" for="customFile">Choose file</label>                      </div>
+                        <label class="custom-file-label" for="customFile">Choose file</label>                      
+                        </div>
 
                        <div class="col-md-6">
                            <img :src="form.photo" style="height:40px; width:40px;">

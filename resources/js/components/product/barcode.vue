@@ -1,33 +1,3 @@
-<!-- <template>
-  <div id="app">
-  <input v-model="barcodeValue" /><br>
-  <barcode :v-bind:value="barcodeValue" font-options="bold">
-    Can't generate the barcode
-  </barcode>
-</div>
-</template>
-
-<script>
-import VueBarcode from 'vue-barcode';
-export default {
- 
-  
-  data: {
-    barcodeValue: 'test',
-  },
-  components: {
-		'barcode': VueBarcode
-	}
-}
-</script> -->
-
-
-
-
-
-
-
-
 <template>
     <div>
 
@@ -150,11 +120,3 @@ import VueBarcode from 'vue-barcode';
     }
 
 </script>
-
-
-<style>
-#em_photo{
-  height: 40px;
-  width: 40px;
-}
-</style>

@@ -49,7 +49,7 @@
                     <li class="list-group-item"><b>Sub Total:</b> {{ orders.sub_total }}</li>
                     <li class="list-group-item"><b>Vat:</b> {{ orders.vat }}</li>
                     <li class="list-group-item"><b>Total:</b> {{ orders.total }}</li>
-                    <li class="list-group-item"><b>paid Amount:</b> {{ orders.pay }}</li>
+                    <li class="list-group-item"><b>Paid Amount:</b> {{ orders.pay }}</li>
                     <li class="list-group-item"><b>Due Amount:</b> {{ orders.due }}</li>
                   </ul>
                 </div>
@@ -96,9 +96,6 @@
               </div>
             </div>
           </div>
-
-
-
 
                   <hr>
                   <div class="text-center">

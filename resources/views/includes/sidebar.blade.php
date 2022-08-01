@@ -33,7 +33,6 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <router-link class="collapse-item" to="/store-employee">Add Employee</router-link>
             <router-link class="collapse-item" to="/employee">All Employee</router-link>
-
           </div>
         </div>
       </li>
@@ -114,7 +113,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <router-link class="collapse-item" to="/store-customer">Add Customer</router-link>
             <router-link class="collapse-item" to="/customer">All Customer</router-link>
-
+            <router-link class="collapse-item" to="/send-mail-all">Send Mail</router-link>
           </div>
         </div>
       </li>
